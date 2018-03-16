@@ -57,13 +57,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="244" verticalCompressionResistancePriority="756" text="1 hour ago" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3N-y1-Kez">
-                                                            <rect key="frame" x="10" y="70" width="329" height="18"/>
+                                                            <rect key="frame" x="10" y="70" width="329" height="203"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="246" verticalCompressionResistancePriority="754" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUU-LY-QEQ">
-                                                            <rect key="frame" x="10" y="103" width="329" height="19.5"/>
+                                                            <rect key="frame" x="10" y="288" width="329" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -75,14 +75,14 @@
                                                             </constraints>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZyN-t6-QAS">
-                                                            <rect key="frame" x="10" y="137.5" width="329" height="218.5"/>
+                                                            <rect key="frame" x="10" y="322.5" width="329" height="0.5"/>
                                                             <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="ZyN-t6-QAS" secondAttribute="height" multiplier="650:432" id="8Iz-8F-3Z9"/>
+                                                                <constraint firstAttribute="width" secondItem="ZyN-t6-QAS" secondAttribute="height" multiplier="650:1" id="8Iz-8F-3Z9"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="752" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04q-Bt-u4F">
-                                                            <rect key="frame" x="10" y="371" width="329" height="51"/>
+                                                            <rect key="frame" x="10" y="338" width="329" height="84"/>
                                                             <string key="text">Content Compression Resistance Priority controls how the frame of a UIView will be calculated when one or more Auto Layout constraints describe its width or height as being smaller than its intrinsic content size. Let's look at a bare bones example:</string>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <nil key="textColor"/>

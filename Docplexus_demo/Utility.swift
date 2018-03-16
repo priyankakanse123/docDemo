@@ -27,12 +27,8 @@ class Utility: NSObject {
 
 //extension to change multiplier
 extension NSLayoutConstraint {
-    /**
-     Change multiplier constraint
-     
-     - parameter multiplier: CGFloat
-     - returns: NSLayoutConstraint
-     */
+    
+    //deactivate previous aspecti ration constrain and replace it with new one
     func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {
         
         NSLayoutConstraint.deactivate([self])
