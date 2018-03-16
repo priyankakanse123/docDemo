@@ -118,22 +118,22 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             cell.descriptnLable.text = ""
             cell.descriptnLable.isHidden = true
         }
-        
+        cell.postImgView.image = nil
+        cell.queryImgAspectRatio = cell.queryImgAspectRatio.setMultiplier(multiplier: 2)
+        NSLayoutConstraint.activate([cell.queryImgAspectRatio])
         //assign post image
-        if(currentPostModelObj.featuredAttachmentUrl is String)
+        if(currentPostModelObj.featuredAttachmentUrl != nil)
         {
-            let multiplier = CGFloat(currentPostModelObj.featuredAttachmentWidth!/currentPostModelObj.featuredAttachmentHeigth!)
+            let multiplier = CGFloat(CGFloat(currentPostModelObj.featuredAttachmentWidth!)/CGFloat(currentPostModelObj.featuredAttachmentHeigth!))
                 cell.queryImgAspectRatio = cell.queryImgAspectRatio.setMultiplier(multiplier:multiplier)// CGFloat((item.width!)/(item.height!)))
+
             cell.postImgView.downloadedFrom(link: currentPostModelObj.featuredAttachmentUrl!)
         }
         else
         {
-            cell.queryImgAspectRatio = cell.queryImgAspectRatio.setMultiplier(multiplier: 0.0)
+            cell.descrTopHeightConstrain.constant = 0
         }
-
-        
-        
-        
+                
         //button attributes
         Utility.drawBorder(customView: cell.viewButtn, borderColor: Constant.Color.lightGrayColor)
         Utility.drawBorder(customView: cell.voteButtn, borderColor: Constant.Color.lightGrayColor)

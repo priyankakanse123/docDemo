@@ -76,6 +76,7 @@
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZyN-t6-QAS">
                                                             <rect key="frame" x="10" y="137.5" width="329" height="218.5"/>
+                                                            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ZyN-t6-QAS" secondAttribute="height" multiplier="650:432" id="8Iz-8F-3Z9"/>
                                                             </constraints>
@@ -166,6 +167,7 @@
                                         <connections>
                                             <outlet property="autherName" destination="GiH-Jf-Zp4" id="Ri5-Cd-ZeC"/>
                                             <outlet property="commentButtn" destination="ecQ-IG-r8L" id="MXB-T6-cu3"/>
+                                            <outlet property="descrTopHeightConstrain" destination="tQQ-Pf-Bou" id="0sn-yt-4jy"/>
                                             <outlet property="descriptnLable" destination="04q-Bt-u4F" id="tNw-co-qSQ"/>
                                             <outlet property="diseaseInfoLbl" destination="o3N-y1-Kez" id="bvc-t7-CfK"/>
                                             <outlet property="innerView" destination="V4P-LA-VqC" id="GE9-VZ-L0N"/>

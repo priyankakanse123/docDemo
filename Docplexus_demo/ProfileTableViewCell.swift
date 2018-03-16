@@ -23,6 +23,7 @@ class ProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var commentButtn: UIButton!
     @IBOutlet weak var queryImgAspectRatio: NSLayoutConstraint!
     @IBOutlet weak var postImgView: UIImageView!
+    @IBOutlet weak var descrTopHeightConstrain: NSLayoutConstraint!
 
     override func awakeFromNib() {
         super.awakeFromNib()
