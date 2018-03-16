@@ -42,19 +42,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="510" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hqL-2S-dJ4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="565" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hqL-2S-dJ4">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="profileCell" rowHeight="510" id="oVo-SD-5Cj" customClass="ProfileTableViewCell" customModule="Docplexus_demo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="510"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="profileCell" rowHeight="565" id="oVo-SD-5Cj" customClass="ProfileTableViewCell" customModule="Docplexus_demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="565"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oVo-SD-5Cj" id="caV-Be-gC5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="564.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4P-LA-VqC">
-                                                    <rect key="frame" x="13" y="13" width="349" height="483.5"/>
+                                                    <rect key="frame" x="13" y="13" width="349" height="538.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1lJ-3D-SxD">
                                                             <rect key="frame" x="5" y="5" width="50" height="50"/>
@@ -75,13 +75,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="244" verticalCompressionResistancePriority="756" text="1 hour ago" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3N-y1-Kez">
-                                                            <rect key="frame" x="10" y="70" width="329" height="203"/>
+                                                            <rect key="frame" x="10" y="70" width="329" height="258"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="246" verticalCompressionResistancePriority="754" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUU-LY-QEQ">
-                                                            <rect key="frame" x="10" y="288" width="329" height="19.5"/>
+                                                            <rect key="frame" x="10" y="343" width="329" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -93,21 +93,21 @@
                                                             </constraints>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZyN-t6-QAS">
-                                                            <rect key="frame" x="10" y="322.5" width="329" height="0.5"/>
+                                                            <rect key="frame" x="10" y="377.5" width="329" height="0.5"/>
                                                             <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ZyN-t6-QAS" secondAttribute="height" multiplier="650:1" id="8Iz-8F-3Z9"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="752" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04q-Bt-u4F">
-                                                            <rect key="frame" x="10" y="338" width="329" height="84"/>
+                                                            <rect key="frame" x="10" y="393" width="329" height="84"/>
                                                             <string key="text">Content Compression Resistance Priority controls how the frame of a UIView will be calculated when one or more Auto Layout constraints describe its width or height as being smaller than its intrinsic content size. Let's look at a bare bones example:</string>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="754" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-IG-r8L">
-                                                            <rect key="frame" x="233" y="437" width="116.5" height="46.5"/>
+                                                            <rect key="frame" x="233" y="492" width="116.5" height="46.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                                             <state key="normal" title="0 Comment" image="commentIcon">
@@ -115,7 +115,7 @@
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai6-cH-iAn">
-                                                            <rect key="frame" x="116.5" y="437" width="116.5" height="46.5"/>
+                                                            <rect key="frame" x="116.5" y="492" width="116.5" height="46.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                                             <state key="normal" title="0 Vote" image="voteIcon">
@@ -123,7 +123,7 @@
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAg-HF-jPY">
-                                                            <rect key="frame" x="0.0" y="437" width="116.5" height="46.5"/>
+                                                            <rect key="frame" x="0.0" y="492" width="116.5" height="46.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="qAg-HF-jPY" secondAttribute="height" multiplier="2:0.8" id="6TL-F4-FRz"/>
                                                             </constraints>

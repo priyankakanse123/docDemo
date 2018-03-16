@@ -33,6 +33,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         //remove tableview row seperator
         self.postTableView.separatorStyle = .none
         
+        //disable tableview
+        self.postTableView.allowsSelection = false
+        
     }
     
     //MARK:-tableview data source

@@ -39,14 +39,7 @@ class PageMenuViewController: UIViewController {
         notificationVc.title = "NOTIFICATION"
         controllerArray.append(notificationVc)
         
-        //guideline
-        let guidelineVc : GuidelineViewController = storyboard.instantiateViewController(withIdentifier: "guidelineVC") as! GuidelineViewController
-        guidelineVc.title = "GUIDELINE"
-        controllerArray.append(guidelineVc)
-
-        
-
-        
+                
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
         let parameters: [CAPSPageMenuOption] = [
@@ -55,7 +48,10 @@ class PageMenuViewController: UIViewController {
             .menuItemSeparatorPercentageHeight(0.1),
             .scrollMenuBackgroundColor(Constant.Color.darkBlueColor),
             .addBottomMenuHairline(true),
-            .menuHeight(64.0)
+            .menuHeight(64.0),
+            .menuItemWidth(self.view.frame.width/3),
+            CAPSPageMenuOption.centerMenuItems(true)
+
             
         ]
         
