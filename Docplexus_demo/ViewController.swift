@@ -158,6 +158,24 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         //view borde
         Utility.drawBorder(customView: cell.innerView, borderColor:  Constant.Color.darkGrayBorderColor)
         
+        //set post topics
+        // create attributed string
+        
+        var myAttrString = NSMutableAttributedString()
+        for item in currentPostModelObj.therapeutics
+        {
+            let myString = item.name!
+            var myAttribute = [NSBackgroundColorAttributeName: Constant.Color.greenColor]       //make background color green
+            myAttrString.append(NSMutableAttributedString(string: myString, attributes: myAttribute))
+            
+            let whiteSpaceString = " "
+            myAttribute = [NSBackgroundColorAttributeName: UIColor.white]         //put white background string to seperate
+            myAttrString.append(NSMutableAttributedString(string: whiteSpaceString, attributes: myAttribute))
+
+        }
+        
+        // set attributed text on a UILabel
+        cell.diseaseInfoLbl.attributedText = myAttrString
         
         return cell
     }
