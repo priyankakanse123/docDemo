@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xzL-dl-gFE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,10 +12,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Page Menu View Controller-->
+        <scene sceneID="QjO-i8-ZPM">
+            <objects>
+                <viewController id="xzL-dl-gFE" customClass="PageMenuViewController" customModule="Docplexus_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IwV-f2-4jD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Khg-GD-yTe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xGW-ZD-muT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23N-cR-Exp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="139"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Docplexus_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="postVC" id="BYZ-38-t0r" customClass="ViewController" customModule="Docplexus_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -203,6 +221,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Notification View Controller-->
+        <scene sceneID="tgI-bV-cUs">
+            <objects>
+                <viewController storyboardIdentifier="NotificationVC" id="V96-qJ-jzy" customClass="NotificationViewController" customModule="Docplexus_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ey3-co-aUY"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4M-p7-ee9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pXS-p8-1vd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98o-fh-lgE">
+                                <rect key="frame" x="143.5" y="323.5" width="88" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="98o-fh-lgE" firstAttribute="centerX" secondItem="pXS-p8-1vd" secondAttribute="centerX" id="Ajd-bx-Ctm"/>
+                            <constraint firstItem="98o-fh-lgE" firstAttribute="centerY" secondItem="pXS-p8-1vd" secondAttribute="centerY" id="Ezo-fg-MLN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Z5-pm-O43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="139.880059970015"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="xau-Hf-hGW">
+            <objects>
+                <viewController storyboardIdentifier="profileVC" id="rKp-6l-UTp" customClass="ProfileViewController" customModule="Docplexus_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kdi-u3-q1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="CtP-oL-QEb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kIP-cl-yhg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH0-AL-632">
+                                <rect key="frame" x="163" y="323.5" width="49" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UH0-AL-632" firstAttribute="centerX" secondItem="kIP-cl-yhg" secondAttribute="centerX" id="1Jx-5o-DIz"/>
+                            <constraint firstItem="UH0-AL-632" firstAttribute="centerY" secondItem="kIP-cl-yhg" secondAttribute="centerY" id="GGe-nC-nyi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sy8-x5-Egw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1930.4000000000001" y="145.27736131934034"/>
+        </scene>
+        <!--Guideline View Controller-->
+        <scene sceneID="ZkN-Kd-Dit">
+            <objects>
+                <viewController storyboardIdentifier="guidelineVC" id="NXr-en-tpG" customClass="GuidelineViewController" customModule="Docplexus_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sp8-kt-wbb"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Zr-8n-QEz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lIk-j7-MJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guideline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z6-p8-SyX">
+                                <rect key="frame" x="151.5" y="323.5" width="72" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Z6-p8-SyX" firstAttribute="centerY" secondItem="lIk-j7-MJ7" secondAttribute="centerY" id="GO6-R5-dQ4"/>
+                            <constraint firstItem="2Z6-p8-SyX" firstAttribute="centerX" secondItem="lIk-j7-MJ7" secondAttribute="centerX" id="pf1-iy-9fm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qP2-F3-Uvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2720.8000000000002" y="146.17691154422789"/>
         </scene>
     </scenes>
     <resources>

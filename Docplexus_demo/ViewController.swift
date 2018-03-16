@@ -15,14 +15,11 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     var postObjListArray = [Model]()                        //stores data to be displayed
 
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpView()
         self.presenterObj = Presenter(pCallback: self)      //declare presenter obj
-        self.presenterObj?.readJsonFile()
+        self.presenterObj?.readJsonFile()                   //call presenter to read json
 
     }
     
@@ -161,11 +158,11 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         //set post topics
         // create attributed string
         
-        var myAttrString = NSMutableAttributedString()
+        let myAttrString = NSMutableAttributedString()
         for item in currentPostModelObj.therapeutics
         {
             let myString = item.name!
-            var myAttribute = [NSBackgroundColorAttributeName: Constant.Color.greenColor]       //make background color green
+            var myAttribute = [NSBackgroundColorAttributeName: Constant.Color.lightBlueColor]       //make background color blue
             myAttrString.append(NSMutableAttributedString(string: myString, attributes: myAttribute))
             
             let whiteSpaceString = " "
